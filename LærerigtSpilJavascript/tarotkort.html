@@ -2,13 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="TarotKort.js"></script>
+    <script src="TarotKort.js" type="text/javascript">
+    function myFunction(){
+        var m = getRandomInt(5);
+        if (m = 0){
+          document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
+          document.getElementById("question").innerHTML = ("tarotkort[0].question");
+        }
+      else if (m = 1){
+        document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
+
+      }
+    }
+    </script>
     <title>Tarotkort</title>
   </head>
   <body>
-
-    <img src="Bunken" alt="" onclick="myFunction">
-    <img src="tarotkort" alt="">
+    <button onclick="myFunction()">Klik her! </button>
+    <!--<img src="https://i.kym-cdn.com/photos/images/original/001/180/928/3e8.jpg" alt="" id="Bunken">
+    <img src="https://lh3.googleusercontent.com/V45ZUOJ4ilM6bYcgfEDVWCSkxi1lhNYx96qS1CVrtpuAuGdMUCy0L5ihhK2gYh1kPSIHjfXbfpeK3HNBtXrc=s400" alt="" id="Tarotkort">-->
 
     <p id="question"> </p>
     <p id="2"> </p>

@@ -24,7 +24,7 @@ var tarotkort = [
     answers: ["Zeus. Hades and Poseidon", "half gods toghter with the gods", "Titans destroyed themselfes"],
     correctAnswer: "Zeus. Hades and Poseidon"
   },
-  
+
    {
     name: "Apollo",
     question: "What are appollo god for?",
@@ -103,25 +103,34 @@ var tarotkort = [
     answers: ["Asgaard and Alfheim?", "Alfheim and Helheim?", "Asgaard and Hvergelmir?"],
     correctAnswer: "Asgaard and Alfheim??"
   }
-  
+
 ]
 
 
 console.log(tarotkort[0].question);
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
   //function myFunction()
-  """console.log(tarotkort[kort].name);"""
+  //"""console.log(tarotkort[kort].name);"""
 
+var m = getRandomInt(10);
+console.log(m)
+function myFunction(){
+  console.log(m);
 
-  myFunction(){
-    var m = getRandomInt(5);
-    if (m = 0){
-      document.getElementById("tarotkort").innerHTML = ("zeus.png");
-      document.getElementById("question").innerHTML = ("tarotkort[0].question")
-      document.getElementById("answer").innerHTML = ()
-    }
-  else if (m = 1){
-    document.getElementById("tarotkort").innerHTML = ("odin.png");
-
+    if (m > 0 && m <5) {
+    //  document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
+  //    document.getElementById("question").innerHTML = (tarotkort[0].question);
+      console.log("Yeet");
   }
-}
+  else if (m > 5 && m < 10) {
+    console.log("Ayy");
+  }
+      //  document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
+
+    else {
+      console.log("Never mind");
+    }
+  }
