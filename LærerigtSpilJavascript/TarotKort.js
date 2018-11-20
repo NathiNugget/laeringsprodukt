@@ -119,59 +119,84 @@ function myFunction(){
   //    document.getElementById("question").innerHTML = (tarotkort[0].question);
       console.log("Dette er kort 0");
       document.getElementById("Title").innerHTML = (tarotkort[0]).name;
-      document.getElementById("Tarotkort").src = "images/" + tarotkort[0].name + .png
+      document.getElementById("Tarotkort").src = "images/" + tarotkort[0].name + ".png";
   }
   else if (m > 1 && m < 3) {
     console.log("Dette er kort 1");
     document.getElementById("Title").innerHTML = (tarotkort[1]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[1].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[1].name + ".png";
   }
   else if (m > 2 && m < 4) {
     console.log("Dette er kort 2");
     document.getElementById("Title").innerHTML = (tarotkort[2]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[2].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[2].name + ".png";
   }
   else if (m > 3 && m < 5) {
     console.log("Dette kort er 3");
     document.getElementById("Title").innerHTML = (tarotkort[3]).name;
-    document.getElementById("Tarotkort").src = "images" + tarotkort[3].name + .png;
+    document.getElementById("Tarotkort").src = "images" + tarotkort[3].name + ".png";
   }
   else if (m > 4 && m < 6) {
     console.log("Dette er kort 4");
     document.getElementById("Title").innerHTML = (tarotkort[4]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[4].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[4].name + ".png";
   }
   else if (m > 5 && m < 7) {
     console.log("Dette er kort 5");
     document.getElementById("Title").innerHTML = (tarotkort[5]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[5].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[5].name + ".png";
   }
   else if (m > 6 && m < 8) {
     console.log("Dette er kort 6");
     document.getElementById("Title").innerHTML = (tarotkort[6]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[6].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[6].name + ".png";
   }
   else if (m > 7 && m < 9) {
     console.log("Dette er kort 7");
     document.getElementById("Title").innerHTML = (tarotkort[7]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[7].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[7].name + ".png";
   }
   else if (m > 8 && m < 10) {
     console.log("Dette er kort 8");
     document.getElementById("Title").innerHTML = (tarotkort[8]).name;
-    document.getElementById("Tarotkort").src = "images/" + tarotkort[8].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[8].name + ".png";
   }
   else if (m > 9 && m < 11) {
     console.log("Dette er kort 9");
     document.getElementById("Title").innerHTML = (tarotkort[9]).name;
-    document.getElementById("Tarotkort").src = "images" + tarotkort[9].name + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[9].name + ".png";
   }
   else if (m > 10 && m < 12) {
     console.log("Dette er kort 10");
     document.getElementById("Title").innerHTML = (tarotkort[10]).name;
-    document.getElementById("Tarotkort").src = "images" + tarotkort[10] + .png;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[10] + ".png";
   }
-    else {
-      console.log("Dette er kort 2");
+  else if (m > 11 && m < 13) {
+    console.log("Dette er kort 11");
+    document.getElementById("Title").innerHTML = (tarotkort[11]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[11] + ".png";
+  }
+  else if (m > 12 && m < 14) {
+    console.log("Dette er kort 12");
+    document.getElementById("Title").innerHTML = (tarotkort[12]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[12] + ".png";
+  }
+  else if (m > 13 && m < 15) {
+    console.log("Dette er kort 13");
+    document.getElementById("Title").innerHTML = (tarotkort[13]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[13] + ".png";
+  }
+  else if (m > 14 && m < 16) {
+    console.log("Dette er kort 14");
+    document.getElementById("Title").innerHTML = (tarotkort[14]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[14] + ".png";
+  }
+  else if (m > 15 && m < 17) {
+    console.log("Dette er kort 15");
+    document.getElementById("Title").innerHTML = (tarotkort[15]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[15] + ".png";
+  }
+  else {
+      console.log("Du har ikke trukket et ordenligt kort");
     }
   }
