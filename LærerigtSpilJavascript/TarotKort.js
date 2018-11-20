@@ -8,7 +8,7 @@
 var tarotkort = [
   {
     name: "Zeus",
-    question: "Which 2 gods are zeuses brothers",
+    question: "Which 2 gods are Zeus'es brothers",
     answers: ["Ares and Apollo", "Poseidon and Hades", "Hermes and Janus"],
     correctAnswer: "Poseidon and Hades"
   },
@@ -20,20 +20,20 @@ var tarotkort = [
   },
   {
     name: "Titansfall",
-    question: "Who caused the titans to fall",
+    question: "Who caused the titans to fall?",
     answers: ["Zeus. Hades and Poseidon", "half gods toghter with the gods", "Titans destroyed themselfes"],
     correctAnswer: "Zeus. Hades and Poseidon"
   },
 
    {
     name: "Apollo",
-    question: "What are appollo god for?",
+    question: "What is Appollo god for?",
     answers: ["God of art, archery and medicine", "God of art, Martial art and sun", "God of husbandry, poetry and health"],
     correctAnswer: "God of art, archery and medicine"
   },
   {
     name: "Athena",
-    question: "Which god became forgotten in the roman era?",
+    question: "Which god became forgotten in the Roman Era?",
     answers: ["Ares?", "Apollo?", "Athena?"],
     correctAnswer: "Athena?"
   },
@@ -50,13 +50,13 @@ var tarotkort = [
     correctAnswer: "Athena?"
   },
   {
-    name: "Roman brothers",
+    name: "Roman_brothers",
     question: "What is the names of the 3 highest ranked gods in the roman era",
     answers: ["Jupiter, Saturn, Mars?", "Neptune, Jupiter, Juno?", "Neptune, Pluto, Jupiter?"],
     correctAnswer: "Neptune, Jupiter, Juno?"
   },
   {
-    name: "God of Wine",
+    name: "God_of_Wine",
     question: "What was the god of wines name in greek and roman",
     answers: ["Dionysus and Bacchus?", "Eros and Bacchus?", "Pan and Bacchus?"],
     correctAnswer: "Dionysus and Bacchus?"
@@ -68,16 +68,10 @@ var tarotkort = [
     correctAnswer: "Heracles, Odysseus, hercules and Ulysses?"
   },
   {
-    name: "GodofVictory",
+    name: "God_of_Victory",
     question: "Which of these gods are god of Victory?",
     answers: ["Nike, Victoria?", "Eos, Aurora?", "Eros, Ops?"],
     correctAnswer: "Nike, Victoria?"
-  },
-  {
-    name: "NordicGods",
-    question: "Which in norse mythology is god of magic and wisdom?",
-    answers: ["Odin?", "Loke?", "Bor?"],
-    correctAnswer: "Odin?"
   },
   {
     name: "NordicGods",
@@ -120,17 +114,64 @@ console.log(m)
 function myFunction(){
   console.log(m);
 
-    if (m > 0 && m <5) {
+    if (m > 0 && m < 2) {
     //  document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
   //    document.getElementById("question").innerHTML = (tarotkort[0].question);
-      console.log("Yeet");
+      console.log("Dette er kort 0");
+      document.getElementById("Title").innerHTML = (tarotkort[0]).name;
+      document.getElementById("Tarotkort").src = "images/" + tarotkort[0].name + .png
   }
-  else if (m > 5 && m < 10) {
-    console.log("Ayy");
+  else if (m > 1 && m < 3) {
+    console.log("Dette er kort 1");
+    document.getElementById("Title").innerHTML = (tarotkort[1]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[1].name + .png;
   }
-      //  document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
-
+  else if (m > 2 && m < 4) {
+    console.log("Dette er kort 2");
+    document.getElementById("Title").innerHTML = (tarotkort[2]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[2].name + .png;
+  }
+  else if (m > 3 && m < 5) {
+    console.log("Dette kort er 3");
+    document.getElementById("Title").innerHTML = (tarotkort[3]).name;
+    document.getElementById("Tarotkort").src = "images" + tarotkort[3].name + .png;
+  }
+  else if (m > 4 && m < 6) {
+    console.log("Dette er kort 4");
+    document.getElementById("Title").innerHTML = (tarotkort[4]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[4].name + .png;
+  }
+  else if (m > 5 && m < 7) {
+    console.log("Dette er kort 5");
+    document.getElementById("Title").innerHTML = (tarotkort[5]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[5].name + .png;
+  }
+  else if (m > 6 && m < 8) {
+    console.log("Dette er kort 6");
+    document.getElementById("Title").innerHTML = (tarotkort[6]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[6].name + .png;
+  }
+  else if (m > 7 && m < 9) {
+    console.log("Dette er kort 7");
+    document.getElementById("Title").innerHTML = (tarotkort[7]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[7].name + .png;
+  }
+  else if (m > 8 && m < 10) {
+    console.log("Dette er kort 8");
+    document.getElementById("Title").innerHTML = (tarotkort[8]).name;
+    document.getElementById("Tarotkort").src = "images/" + tarotkort[8].name + .png;
+  }
+  else if (m > 9 && m < 11) {
+    console.log("Dette er kort 9");
+    document.getElementById("Title").innerHTML = (tarotkort[9]).name;
+    document.getElementById("Tarotkort").src = "images" + tarotkort[9].name + .png;
+  }
+  else if (m > 10 && m < 12) {
+    console.log("Dette er kort 10");
+    document.getElementById("Title").innerHTML = (tarotkort[10]).name;
+    document.getElementById("Tarotkort").src = "images" + tarotkort[10] + .png;
+  }
     else {
-      console.log("Never mind");
+      console.log("Dette er kort 2");
     }
   }
