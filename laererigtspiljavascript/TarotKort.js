@@ -113,16 +113,16 @@ var m = getRandomInt(10);
 console.log(m)
 function myFunction(){
   console.log(m);
-    var button1 = document.createElement("button");
-    var currentButton = document.getElementById("button2");
-    document.body.insertBefore(button1, currentButton);
+    var button1 = document.createElement("button").text;
+/*    var currentButton = document.getElementById("button2");
+    document.body.insertBefore(button1, currentButton);*/
     if (m > 0 && m < 2) {
     //  document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
   //    document.getElementById("question").innerHTML = (tarotkort[0].question);
       console.log("Dette er kort 0");
       document.getElementById("Title").innerHTML = (tarotkort[0]).name;
       document.getElementById("Tarotkort").src = "images/" + tarotkort[0].name + ".png";
-      document.getElementById("button1").innerHTML = tarotkort[0].correctAnswer;
+      document.getElementById("yeet").innerHTML = tarotkort[0].correctAnswer;
 
   }
   else if (m > 1 && m < 3) {
