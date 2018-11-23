@@ -38,7 +38,7 @@ var tarotkort = [
     correctAnswer: "Athena?"
   },
   {
-    name: "RomenGods",
+    name: "RomanGods",
     question: "Where did the roman gods originate from?",
     answers: ["Greek Gods?", "Nordic Gods?", "Egyption Gods?"],
     correctAnswer: "Greek Gods?"
@@ -109,11 +109,11 @@ function getRandomInt(max) {
   //function myFunction()
   //"""console.log(tarotkort[kort].name);"""
 
-var m = getRandomInt(10);
+var m = getRandomInt(17);
 console.log(m)
 function myFunction(){
   console.log(m);
-    var button1 = document.createElement("button").text;
+  //  var button1 = document.createElement("button").text;
 /*    var currentButton = document.getElementById("button2");
     document.body.insertBefore(button1, currentButton);*/
     if (m > 0 && m < 2) {
@@ -122,7 +122,9 @@ function myFunction(){
       console.log("Dette er kort 0");
       document.getElementById("Title").innerHTML = (tarotkort[0]).name;
       document.getElementById("Tarotkort").src = "images/" + tarotkort[0].name + ".png";
-      document.getElementById("yeet").innerHTML = tarotkort[0].correctAnswer;
+      document.getElementById("question1").innerHTML = tarotkort[0].answers[0];
+      document.getElementById("question2").innerHTML = tarotkort[0].answers[1];
+      document.getElementById("question3").innerHTML = tarotkort[0].answers[2];
 
   }
   else if (m > 1 && m < 3) {
