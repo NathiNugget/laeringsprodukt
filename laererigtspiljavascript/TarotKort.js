@@ -236,9 +236,9 @@ function myFunction(){
     console.log("Dette er kort 14");
     document.getElementById("Title").innerHTML = (tarotkort[14]).name;
     document.getElementById("Tarotkort").src = "images/" + tarotkort[14].name + ".png";
+    document.getElementById("question3").innerHTML = tarotkort[14].answers[2];
     document.getElementById("question1").innerHTML = tarotkort[14].answers[0];
     document.getElementById("question2").innerHTML = tarotkort[14].answers[1];
-    document.getElementById("question3").innerHTML = tarotkort[14].answers[2];
   }
   else {
       console.log("Du har ikke trukket et ordenligt kort");
