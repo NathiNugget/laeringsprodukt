@@ -8,12 +8,13 @@
     <title>Tarotkort</title>
   </head>
   <body style="background-color: cyan;">
-    <button onclick="myFunction()">Klik her! </button>
+    <button onclick="myFunction_short(m)">Klik her! </button>
     <img src="https://i.kym-cdn.com/photos/images/original/001/180/928/3e8.jpg" alt="" id="Bunken" height="200px" width="200px">
     <img src="https://lh3.googleusercontent.com/V45ZUOJ4ilM6bYcgfEDVWCSkxi1lhNYx96qS1CVrtpuAuGdMUCy0L5ihhK2gYh1kPSIHjfXbfpeK3HNBtXrc=s400" alt="Tarotkort" id="Tarotkort" width="400px" height="400px">
-    <button onclick="svar()" id="question1"> </button>
-    <button onclick="svar()" id="question2"> </button>
-    <button onclick="svar()" id="question3"> </button>
+    <h3 id="question"> </h3>
+    <button onclick="svar(this.id)" id="answer1"> </button>
+    <button onclick="svar(this.id)" id="answer2"> </button>
+    <button onclick="svar(this.id)" id="answer3"> </button>
     <p id="1"> </p>
     <p id="2"> </p>
     <p id="3"> </p>

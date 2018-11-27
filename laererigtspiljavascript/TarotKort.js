@@ -47,7 +47,7 @@ var tarotkort = [
     name: "Bellona",
     question: "Which god became a substitude for Athena in the roman empire",
     answers: ["Pluto?", "Bellona?", "Venus?"],
-    correctAnswer: "Athena?"
+    correctAnswer: "Bellona?"
   },
   {
     name: "Roman_brothers",
@@ -122,10 +122,12 @@ function myFunction(){
       console.log("Dette er kort 0");
       document.getElementById("Title").innerHTML = (tarotkort[0]).name;
       document.getElementById("Tarotkort").src = "images/" + tarotkort[0].name + ".png";
+      document.getElementById("question1").value = tarotkort[0].answers[0];
+      var q = document.getElementById("question1").value;
+      console.log(q);
       document.getElementById("question1").innerHTML = tarotkort[0].answers[0];
       document.getElementById("question2").innerHTML = tarotkort[0].answers[1];
       document.getElementById("question3").innerHTML = tarotkort[0].answers[2];
-
   }
   else if (m > 1 && m < 3) {
     console.log("Dette er kort 1");
@@ -244,3 +246,27 @@ function myFunction(){
       console.log("Du har ikke trukket et ordenligt kort");
     }
   }
+
+
+function myFunction_short(m){
+
+  console.log(m);
+  document.getElementById("Title").innerHTML = (tarotkort[m]).name;
+  document.getElementById("Tarotkort").src = "images/" + tarotkort[m].name + ".png";
+  document.getElementById("answer1").value = tarotkort[m].answers[0];
+  document.getElementById("answer2").value = tarotkort[m].answers[1];
+  document.getElementById("answer3").value = tarotkort[m].answers[2];
+  /*var q = document.getElementById("answer1").value
+  console.log(q);
+  document.getElementById("question1").innerHTML = tarotkort[m].answers[0];
+  document.getElementById("question2").innerHTML = tarotkort[m].answers[1];
+  document.getElementById("question3").innerHTML = tarotkort[m].answers[2];*/
+
+}
+function svar(clicked_id){
+  var svar_klik = document.getElementById(clicked_id).value;
+  if (svar_klik == tarotkort[m].correctAnswer) {
+    window.alert("Det var rigtigt");
+  }
+  console.log(svar);
+}
