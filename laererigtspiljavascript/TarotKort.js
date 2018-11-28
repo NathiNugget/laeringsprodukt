@@ -8,7 +8,7 @@
 var tarotkort = [
   {
     name: "Zeus",
-    question: "Which 2 gods are Zeus'es brothers",
+    question: "Which 2 gods are Zeus'es brothers?",
     answers: ["Ares and Apollo", "Poseidon and Hades", "Hermes and Janus"],
     correctAnswer: "Poseidon and Hades"
   },
@@ -45,19 +45,19 @@ var tarotkort = [
   },
   {
     name: "Bellona",
-    question: "Which god became a substitude for Athena in the roman empire",
+    question: "Which god became a substitude for Athena in the roman empire?",
     answers: ["Pluto?", "Bellona?", "Venus?"],
     correctAnswer: "Bellona?"
   },
   {
     name: "Roman_brothers",
-    question: "What is the names of the 3 highest ranked gods in the roman era",
+    question: "What is the names of the 3 highest ranked gods in the roman era?",
     answers: ["Jupiter, Saturn, Mars?", "Neptune, Jupiter, Juno?", "Neptune, Pluto, Jupiter?"],
     correctAnswer: "Neptune, Jupiter, Juno?"
   },
   {
     name: "God_of_Wine",
-    question: "What was the god of wines name in greek and roman",
+    question: "What was the god of wines name in greek and roman?",
     answers: ["Dionysus and Bacchus?", "Eros and Bacchus?", "Pan and Bacchus?"],
     correctAnswer: "Dionysus and Bacchus?"
   },
@@ -109,13 +109,11 @@ function getRandomInt(max) {
   //function myFunction()
   //"""console.log(tarotkort[kort].name);"""
 
-var m = getRandomInt(17);
-console.log(m)
-function myFunction(){
+/*function myFunction(){
   console.log(m);
   //  var button1 = document.createElement("button").text;
-/*    var currentButton = document.getElementById("button2");
-    document.body.insertBefore(button1, currentButton);*/
+   var currentButton = document.getElementById("button2");
+    document.body.insertBefore(button1, currentButton);
     if (m > 0 && m < 2) {
     //  document.getElementById("Tarotkort").innerHTML = ("https://vignette.wikia.nocookie.net/robloxcreepypasta/images/d/d5/BOI.jpg/revision/latest?cb=20180102021626");
   //    document.getElementById("question").innerHTML = (tarotkort[0].question);
@@ -245,28 +243,35 @@ function myFunction(){
   else {
       console.log("Du har ikke trukket et ordenligt kort");
     }
-  }
+  }*/
 
+var correctA = 0;
+var p = 0;
 
-function myFunction_short(m){
-
+function myFunction_short(){
+  var m = getRandomInt(15);
   console.log(m);
-  document.getElementById("Title").innerHTML = (tarotkort[m]).name;
+  document.getElementById("question_title").value = tarotkort[m].question;
+  document.getElementById("question_title").innerHTML = tarotkort[m].question;
   document.getElementById("Tarotkort").src = "images/" + tarotkort[m].name + ".png";
   document.getElementById("answer1").value = tarotkort[m].answers[0];
   document.getElementById("answer2").value = tarotkort[m].answers[1];
   document.getElementById("answer3").value = tarotkort[m].answers[2];
-  /*var q = document.getElementById("answer1").value
+  var q = document.getElementById("answer1").value
   console.log(q);
-  document.getElementById("question1").innerHTML = tarotkort[m].answers[0];
-  document.getElementById("question2").innerHTML = tarotkort[m].answers[1];
-  document.getElementById("question3").innerHTML = tarotkort[m].answers[2];*/
-
+  document.getElementById("answer1").innerHTML = tarotkort[m].answers[0];
+  document.getElementById("answer2").innerHTML = tarotkort[m].answers[1];
+  document.getElementById("answer3").innerHTML = tarotkort[m].answers[2];
+  correctA = m;
 }
+
 function svar(clicked_id){
   var svar_klik = document.getElementById(clicked_id).value;
-  if (svar_klik == tarotkort[m].correctAnswer) {
+  if (svar_klik == tarotkort[correctA].correctAnswer) {
+    p++;
     window.alert("Det var rigtigt");
+    document.getElementsByTagName('title')[0].innerHTML = "Du har " + p + " points";
+    myFunction_short();
   }
   console.log(svar);
 }
