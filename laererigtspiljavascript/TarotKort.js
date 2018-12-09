@@ -247,7 +247,10 @@ function getRandomInt(max) {
 
 var correctA = 0;
 var p = 0;
-
+// her defineres en funktion der
+function notification(){
+  window.alert("Du har klikket på mig")
+}
 function myFunction_short(){
   var m = getRandomInt(15);
   console.log(m);
@@ -266,18 +269,22 @@ function myFunction_short(){
 }
 
 function svar(clicked_id){
+
   var svar_klik = document.getElementById(clicked_id).value;
   if (svar_klik == tarotkort[correctA].correctAnswer) {
     p++;
     window.alert("Det var rigtigt");
     document.getElementsByTagName('title')[0].innerHTML = "Du har " + p + " points";
+    document.getElementById('counter').innerHTML = "Du har " + p + " points";
     myFunction_short();
   }
+
   else if (svar_klik != tarotkort[correctA].correctAnswer) {
-    p--;
+    p = p-1;
     window.alert("Det var ikke rigtigt");
     document.getElementsByTagName('title')[0].innerHTML = "Du har " + p + " points";
-
+    document.getElementById('counter').innerHTML = "Du har " + p + " points";
+    myFunction_short();
   }
   console.log(svar);
 }
