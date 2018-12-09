@@ -273,5 +273,11 @@ function svar(clicked_id){
     document.getElementsByTagName('title')[0].innerHTML = "Du har " + p + " points";
     myFunction_short();
   }
+  else if (svar_klik != tarotkort[correctA].correctAnswer) {
+    p--;
+    window.alert("Det var ikke rigtigt");
+    document.getElementsByTagName('title')[0].innerHTML = "Du har " + p + " points";
+
+  }
   console.log(svar);
 }
