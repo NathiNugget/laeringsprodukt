@@ -267,7 +267,8 @@ function myFunction_short(){
   document.getElementById("answer3").innerHTML = tarotkort[m].answers[2];
   correctA = m;
 }
-
+var bleep = new Audio();
+bleep.src = "ding.mp3";
 function svar(clicked_id){
 
   var svar_klik = document.getElementById(clicked_id).value;
@@ -277,6 +278,8 @@ function svar(clicked_id){
     document.getElementsByTagName('title')[0].innerHTML = "Du har " + p + " points";
     document.getElementById('counter').innerHTML = "Du har " + p + " points";
     myFunction_short();
+    bleep.play()
+
   }
 
   else if (svar_klik != tarotkort[correctA].correctAnswer) {
